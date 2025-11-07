@@ -1,0 +1,147 @@
+Last login: Mon Nov  3 14:59:55 on ttys000
+anita@quintypes-MacBook-Pro ~ % cd git_demo 
+anita@quintypes-MacBook-Pro git_demo % git config --global --list
+anita@quintypes-MacBook-Pro git_demo % git config --list         
+credential.helper=osxkeychain
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+anita@quintypes-MacBook-Pro git_demo % git config --global user.name "My Name"
+
+anita@quintypes-MacBook-Pro git_demo % git status 
+On branch master
+nothing to commit, working tree clean
+anita@quintypes-MacBook-Pro git_demo % history
+  810  python3 story_tmoe.py
+  811  python3 story_tmoe.py
+  812  python3 story_tmoe.py
+  813  gzip story-tmoeticket-00003.txt
+  814  python3 story_tmoe.py
+  815  git --version
+  816  which git
+  817  brew search git
+  818  brew install git
+  819  git --version
+  820  exit
+  821  cd git_demo
+  822  git config --global --list
+  823  git config --list
+  824  git config --global user.name "My Name"\n
+  825  git status
+anita@quintypes-MacBook-Pro git_demo % git config --global --edit             
+anita@quintypes-MacBook-Pro git_demo % git config --list                      
+credential.helper=osxkeychain
+user.name=anitha
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+anita@quintypes-MacBook-Pro git_demo % git config --global --edit
+anita@quintypes-MacBook-Pro git_demo % git config --list         
+credential.helper=osxkeychain
+user.name=anitha
+user.email=anitha.kode@quintype.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+anita@quintypes-MacBook-Pro git_demo % git config user.name
+
+anitha
+anita@quintypes-MacBook-Pro git_demo % git confid user.email
+git: 'confid' is not a git command. See 'git --help'.
+
+The most similar command is
+	config
+anita@quintypes-MacBook-Pro git_demo % git config user.email
+
+anitha.kode@quintype.com
+anita@quintypes-MacBook-Pro git_demo % git config --global --edit
+anita@quintypes-MacBook-Pro git_demo % git config --list         
+credential.helper=osxkeychain
+user.name=anitha
+user.email=anitha.kode@quintype.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+anita@quintypes-MacBook-Pro git_demo % touch test1.txt           
+anita@quintypes-MacBook-Pro git_demo % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	test1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+anita@quintypes-MacBook-Pro git_demo % git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config set advice.addEmptyPathspec false"
+anita@quintypes-MacBook-Pro git_demo % git add .
+anita@quintypes-MacBook-Pro git_demo % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   test1.txt
+
+anita@quintypes-MacBook-Pro git_demo % git comit -m "2nd file comit"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+anita@quintypes-MacBook-Pro git_demo % git comit -m "second file comit"
+git: 'comit' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+anita@quintypes-MacBook-Pro git_demo % git commit -m "second file comit"
+[master f113427] second file comit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test1.txt
+anita@quintypes-MacBook-Pro git_demo % git status                      
+On branch master
+nothing to commit, working tree clean
+anita@quintypes-MacBook-Pro git_demo % git log                         
+commit f113427707b8e7a686172c15157004a7c242400f (HEAD -> master)
+Author: anitha <anitha.kode@quintype.com>
+Date:   Mon Nov 3 16:30:25 2025 +0530
+
+    second file comit
+
+commit 35d9b28843611dfcdd72575d95c16db090039fdd
+Author: anitha <anita@quintypes-MacBook-Pro.local>
+Date:   Mon Nov 3 16:10:06 2025 +0530
+
+    Add new file
+anita@quintypes-MacBook-Pro git_demo % git log --one-line 
+fatal: unrecognized argument: --one-line
+anita@quintypes-MacBook-Pro git_demo % git log --oneline 
+f113427 (HEAD -> master) second file comit
+35d9b28 Add new file
+anita@quintypes-MacBook-Pro git_demo % history
+  832  git confid user.email
+  833  git config user.email\n
+  834  git config --global --edit
+  835  git config --list
+  836  touch test1.txt
+  837  git status
+  838  git add
+  839  git add .
+  840  git status
+  841  git comit -m "2nd file comit"
+  842  git comit -m "second file comit"
+  843  git commit -m "second file comit"
+  844  git status
+  845  git log
+  846  git log --one-line
+  847  git log --oneline
+anita@quintypes-MacBook-Pro git_demo % 
