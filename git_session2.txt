@@ -1,0 +1,1048 @@
+anita@quintypes-MacBook-Pro ~ % ls 
+composer	Documents	extract_tar	Library		Movies		mydocs		Pictures	Public		Sites
+Desktop		Downloads	git_demo	linux_training	Music		new.tar		Postman		quintype	test2
+anita@quintypes-MacBook-Pro ~ % cd git_demo 
+anita@quintypes-MacBook-Pro git_demo % ls -la
+total 16
+drwxr-xr-x   6 anita  staff   192  3 Nov 16:51 .
+drwxr-x---+ 42 anita  staff  1344  7 Nov 11:42 ..
+drwxr-xr-x  12 anita  staff   384  3 Nov 16:30 .git
+-rw-r--r--@  1 anita  staff  4887  3 Nov 16:51 git_session.txt
+-rw-r--r--@  1 anita  staff     0  3 Nov 16:06 test.txt
+-rw-r--r--   1 anita  staff     0  3 Nov 16:28 test1.txt
+anita@quintypes-MacBook-Pro git_demo % git config list
+credential.helper=osxkeychain
+user.name=anitha
+user.email=anitha.kode@quintype.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+core.ignorecase=true
+core.precomposeunicode=true
+anita@quintypes-MacBook-Pro git_demo % git config edit --local
+anita@quintypes-MacBook-Pro git_demo % cd .git 
+anita@quintypes-MacBook-Pro .git % ls -la
+total 40
+drwxr-xr-x  12 anita  staff  384  7 Nov 11:48 .
+drwxr-xr-x   6 anita  staff  192  3 Nov 16:51 ..
+-rw-r--r--   1 anita  staff   18  3 Nov 16:30 COMMIT_EDITMSG
+-rw-r--r--   1 anita  staff  137  3 Nov 16:03 config
+-rw-r--r--   1 anita  staff   73  3 Nov 16:03 description
+-rw-r--r--   1 anita  staff   23  3 Nov 16:03 HEAD
+drwxr-xr-x  16 anita  staff  512  3 Nov 16:03 hooks
+-rw-r--r--   1 anita  staff  209  3 Nov 16:30 index
+drwxr-xr-x   3 anita  staff   96  3 Nov 16:03 info
+drwxr-xr-x   4 anita  staff  128  3 Nov 16:10 logs
+drwxr-xr-x   9 anita  staff  288  3 Nov 16:30 objects
+drwxr-xr-x   4 anita  staff  128  3 Nov 16:03 refs
+anita@quintypes-MacBook-Pro .git % cat config
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+anita@quintypes-MacBook-Pro .git % cd ..
+anita@quintypes-MacBook-Pro git_demo % which git
+anita@quintypes-MacBook-Pro git_demo % cd ...
+cd: no such file or directory: ...
+anita@quintypes-MacBook-Pro git_demo % cd ..
+anita@quintypes-MacBook-Pro ~ % ls    
+composer	Documents	extract_tar	Library		Movies		mydocs		Pictures	Public		Sites
+Desktop		Downloads	git_demo	linux_training	Music		new.tar		Postman		quintype	test2
+anita@quintypes-MacBook-Pro ~ % cd / 
+anita@quintypes-MacBook-Pro / % ls 
+Applications	cores		etc		Library		private		System		Users		var
+bin		dev		home		opt		sbin		tmp		usr		Volumes
+anita@quintypes-MacBook-Pro / % cd usr/local/bin    
+anita@quintypes-MacBook-Pro bin % ls -la
+total 0
+drwxrwxr-x  423 anita  admin  13536  4 Nov 10:49 .
+drwxr-xr-x   14 root   wheel    448  6 Sep 12:40 ..
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 annotate -> ../Cellar/gd/2.3.3_6/bin/annotate
+lrwxr-xr-x    1 anita  admin     31 15 Sep 13:18 aomdec -> ../Cellar/aom/3.13.1/bin/aomdec
+lrwxr-xr-x    1 anita  admin     31 15 Sep 13:18 aomenc -> ../Cellar/aom/3.13.1/bin/aomenc
+lrwxr-xr-x    1 anita  admin     38 15 Sep 13:18 argon2 -> ../Cellar/argon2/20190702_1/bin/argon2
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 autoconf -> ../Cellar/autoconf/2.72/bin/autoconf
+lrwxr-xr-x    1 anita  admin     38 15 Sep 13:18 autoheader -> ../Cellar/autoconf/2.72/bin/autoheader
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 autom4te -> ../Cellar/autoconf/2.72/bin/autom4te
+lrwxr-xr-x    1 anita  admin     36  6 Sep 13:25 autopoint -> ../Cellar/gettext/0.26/bin/autopoint
+lrwxr-xr-x    1 anita  admin     38 15 Sep 13:18 autoreconf -> ../Cellar/autoconf/2.72/bin/autoreconf
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 autoscan -> ../Cellar/autoconf/2.72/bin/autoscan
+lrwxr-xr-x    1 anita  admin     38 15 Sep 13:18 autoupdate -> ../Cellar/autoconf/2.72/bin/autoupdate
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 avifdec -> ../Cellar/libavif/1.3.0/bin/avifdec
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 avifenc -> ../Cellar/libavif/1.3.0/bin/avifenc
+lrwxr-xr-x    1 anita  admin     43 15 Sep 13:18 avifgainmaputil -> ../Cellar/libavif/1.3.0/bin/avifgainmaputil
+lrwxr-xr-x    1 anita  admin     32  6 Sep 12:48 aws -> ../Cellar/awscli/2.28.25/bin/aws
+lrwxr-xr-x    1 anita  admin     42  6 Sep 12:48 aws_completer -> ../Cellar/awscli/2.28.25/bin/aws_completer
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 b2sum -> ../Cellar/coreutils/9.7/bin/b2sum
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 base32 -> ../Cellar/coreutils/9.7/bin/base32
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 basenc -> ../Cellar/coreutils/9.7/bin/basenc
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:18 bdftogd -> ../Cellar/gd/2.3.3_6/bin/bdftogd
+lrwxr-xr-x    1 anita  admin     43 15 Sep 13:18 benchmark_xl -> ../Cellar/jpeg-xl/0.11.1_3/bin/benchmark_xl
+lrwxr-xr-x    1 anita  admin     20  6 Sep 12:45 brew -> ../Homebrew/bin/brew
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 brotli -> ../Cellar/brotli/1.1.0/bin/brotli
+lrwxr-xr-x    1 anita  admin     34 15 Sep 13:18 bsqldb -> ../Cellar/freetds/1.5.6/bin/bsqldb
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 bsqlodbc -> ../Cellar/freetds/1.5.6/bin/bsqlodbc
+lrwxr-xr-x    1 anita  admin     47 15 Sep 13:18 butteraugli_main -> ../Cellar/jpeg-xl/0.11.1_3/bin/butteraugli_main
+lrwxr-xr-x    1 anita  admin     38  4 Nov 10:49 c_rehash -> ../Cellar/openssl@3/3.6.0/bin/c_rehash
+lrwxr-xr-x    1 anita  admin     31 15 Sep 13:19 c++-15 -> ../Cellar/gcc/15.1.0/bin/c++-15
+lrwxr-xr-x    1 anita  admin     38 10 Sep 14:13 cairo-trace -> ../Cellar/cairo/1.18.4/bin/cairo-trace
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 chcon -> ../Cellar/coreutils/9.7/bin/chcon
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 cjpeg -> ../Cellar/jpeg-turbo/3.1.2/bin/cjpeg
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 cjxl -> ../Cellar/jpeg-xl/0.11.1_3/bin/cjxl
+lrwxr-xr-x@   1 anita  admin    167  3 Nov 17:19 code -> /private/var/folders/18/qbygm2w92j346b4rbfz7rx8m0000gp/T/AppTranslocation/04DA36FB-3C1D-4941-8A68-09D96A7FB852/d/Visual Studio Code.app/Contents/Resources/app/bin/code
+lrwxr-xr-x    1 anita  admin     31 15 Sep 13:19 cpp-15 -> ../Cellar/gcc/15.1.0/bin/cpp-15
+lrwxr-xr-x    1 anita  admin     30 15 Sep 13:18 cwebp -> ../Cellar/webp/1.6.0/bin/cwebp
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 datacopy -> ../Cellar/freetds/1.5.6/bin/datacopy
+lrwxr-xr-x    1 anita  admin     48 15 Sep 13:18 decode_and_encode -> ../Cellar/jpeg-xl/0.11.1_3/bin/decode_and_encode
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 defncopy -> ../Cellar/freetds/1.5.6/bin/defncopy
+lrwxr-xr-x    1 anita  admin     45 15 Sep 13:18 display_to_hlg -> ../Cellar/jpeg-xl/0.11.1_3/bin/display_to_hlg
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 djpeg -> ../Cellar/jpeg-turbo/3.1.2/bin/djpeg
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 djxl -> ../Cellar/jpeg-xl/0.11.1_3/bin/djxl
+lrwxr-xr-x    1 anita  admin     49 15 Sep 13:18 djxl_fuzzer_corpus -> ../Cellar/jpeg-xl/0.11.1_3/bin/djxl_fuzzer_corpus
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 dltest -> ../Cellar/unixodbc/2.3.12/bin/dltest
+lrwxr-xr-x@   1 root   admin     54 25 Sep 15:10 docker -> /Applications/Docker.app/Contents/Resources/bin/docker
+lrwxr-xr-x@   1 root   admin     70 25 Sep 15:10 docker-compose -> /Applications/Docker.app/Contents/Resources/cli-plugins/docker-compose
+lrwxr-xr-x@   1 root   admin     73 25 Sep 15:10 docker-credential-desktop -> /Applications/Docker.app/Contents/Resources/bin/docker-credential-desktop
+lrwxr-xr-x@   1 root   admin     77 25 Sep 15:10 docker-credential-osxkeychain -> /Applications/Docker.app/Contents/Resources/bin/docker-credential-osxkeychain
+lrwxr-xr-x    1 anita  admin     30 15 Sep 13:18 dwebp -> ../Cellar/webp/1.6.0/bin/dwebp
+lrwxr-xr-x    1 anita  admin     35  6 Sep 13:25 envsubst -> ../Cellar/gettext/0.26/bin/envsubst
+lrwxr-xr-x    1 anita  admin     40 15 Sep 13:18 exr_to_pq -> ../Cellar/jpeg-xl/0.11.1_3/bin/exr_to_pq
+lrwxr-xr-x    1 anita  admin     38 15 Sep 13:18 exr2aces -> ../Cellar/openexr/3.4.0_1/bin/exr2aces
+lrwxr-xr-x    1 anita  admin     39 15 Sep 13:18 exrenvmap -> ../Cellar/openexr/3.4.0_1/bin/exrenvmap
+lrwxr-xr-x    1 anita  admin     39 15 Sep 13:18 exrheader -> ../Cellar/openexr/3.4.0_1/bin/exrheader
+lrwxr-xr-x    1 anita  admin     37 15 Sep 13:18 exrinfo -> ../Cellar/openexr/3.4.0_1/bin/exrinfo
+lrwxr-xr-x    1 anita  admin     44 15 Sep 13:18 exrmakepreview -> ../Cellar/openexr/3.4.0_1/bin/exrmakepreview
+lrwxr-xr-x    1 anita  admin     42 15 Sep 13:18 exrmaketiled -> ../Cellar/openexr/3.4.0_1/bin/exrmaketiled
+lrwxr-xr-x    1 anita  admin     41 15 Sep 13:18 exrmanifest -> ../Cellar/openexr/3.4.0_1/bin/exrmanifest
+lrwxr-xr-x    1 anita  admin     40 15 Sep 13:18 exrmetrics -> ../Cellar/openexr/3.4.0_1/bin/exrmetrics
+lrwxr-xr-x    1 anita  admin     42 15 Sep 13:18 exrmultipart -> ../Cellar/openexr/3.4.0_1/bin/exrmultipart
+lrwxr-xr-x    1 anita  admin     42 15 Sep 13:18 exrmultiview -> ../Cellar/openexr/3.4.0_1/bin/exrmultiview
+lrwxr-xr-x    1 anita  admin     40 15 Sep 13:18 exrstdattr -> ../Cellar/openexr/3.4.0_1/bin/exrstdattr
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 factor -> ../Cellar/coreutils/9.7/bin/factor
+lrwxr-xr-x    1 anita  admin     34 10 Sep 14:13 fax2ps -> ../Cellar/libtiff/4.7.0/bin/fax2ps
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 fax2tiff -> ../Cellar/libtiff/4.7.0/bin/fax2tiff
+lrwxr-xr-x    1 anita  admin     40 10 Sep 14:13 fc-cache -> ../Cellar/fontconfig/2.17.1/bin/fc-cache
+lrwxr-xr-x    1 anita  admin     38 10 Sep 14:13 fc-cat -> ../Cellar/fontconfig/2.17.1/bin/fc-cat
+lrwxr-xr-x    1 anita  admin     43 10 Sep 14:13 fc-conflist -> ../Cellar/fontconfig/2.17.1/bin/fc-conflist
+lrwxr-xr-x    1 anita  admin     39 10 Sep 14:13 fc-list -> ../Cellar/fontconfig/2.17.1/bin/fc-list
+lrwxr-xr-x    1 anita  admin     40 10 Sep 14:13 fc-match -> ../Cellar/fontconfig/2.17.1/bin/fc-match
+lrwxr-xr-x    1 anita  admin     42 10 Sep 14:13 fc-pattern -> ../Cellar/fontconfig/2.17.1/bin/fc-pattern
+lrwxr-xr-x    1 anita  admin     40 10 Sep 14:13 fc-query -> ../Cellar/fontconfig/2.17.1/bin/fc-query
+lrwxr-xr-x    1 anita  admin     39 10 Sep 14:13 fc-scan -> ../Cellar/fontconfig/2.17.1/bin/fc-scan
+lrwxr-xr-x    1 anita  admin     43 10 Sep 14:13 fc-validate -> ../Cellar/fontconfig/2.17.1/bin/fc-validate
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 fisql -> ../Cellar/freetds/1.5.6/bin/fisql
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 freebcp -> ../Cellar/freetds/1.5.6/bin/freebcp
+lrwxr-xr-x    1 anita  admin     45 10 Sep 14:13 freetype-config -> ../Cellar/freetype/2.14.0/bin/freetype-config
+lrwxr-xr-x    1 anita  admin     30 18 Sep 15:52 g[ -> ../Cellar/coreutils/9.7/bin/g[
+lrwxr-xr-x    1 anita  admin     31 15 Sep 13:19 g++-15 -> ../Cellar/gcc/15.1.0/bin/g++-15
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gb2sum -> ../Cellar/coreutils/9.7/bin/gb2sum
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gbase32 -> ../Cellar/coreutils/9.7/bin/gbase32
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gbase64 -> ../Cellar/coreutils/9.7/bin/gbase64
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 gbasename -> ../Cellar/coreutils/9.7/bin/gbasename
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gbasenc -> ../Cellar/coreutils/9.7/bin/gbasenc
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gcat -> ../Cellar/coreutils/9.7/bin/gcat
+lrwxr-xr-x    1 anita  admin     31 15 Sep 13:19 gcc-15 -> ../Cellar/gcc/15.1.0/bin/gcc-15
+lrwxr-xr-x    1 anita  admin     34 15 Sep 13:19 gcc-ar-15 -> ../Cellar/gcc/15.1.0/bin/gcc-ar-15
+lrwxr-xr-x    1 anita  admin     34 15 Sep 13:19 gcc-nm-15 -> ../Cellar/gcc/15.1.0/bin/gcc-nm-15
+lrwxr-xr-x    1 anita  admin     38 15 Sep 13:19 gcc-ranlib-15 -> ../Cellar/gcc/15.1.0/bin/gcc-ranlib-15
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gchcon -> ../Cellar/coreutils/9.7/bin/gchcon
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gchgrp -> ../Cellar/coreutils/9.7/bin/gchgrp
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gchmod -> ../Cellar/coreutils/9.7/bin/gchmod
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gchown -> ../Cellar/coreutils/9.7/bin/gchown
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gchroot -> ../Cellar/coreutils/9.7/bin/gchroot
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gcksum -> ../Cellar/coreutils/9.7/bin/gcksum
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gcomm -> ../Cellar/coreutils/9.7/bin/gcomm
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:19 gcov-15 -> ../Cellar/gcc/15.1.0/bin/gcov-15
+lrwxr-xr-x    1 anita  admin     37 15 Sep 13:19 gcov-dump-15 -> ../Cellar/gcc/15.1.0/bin/gcov-dump-15
+lrwxr-xr-x    1 anita  admin     37 15 Sep 13:19 gcov-tool-15 -> ../Cellar/gcc/15.1.0/bin/gcov-tool-15
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gcp -> ../Cellar/coreutils/9.7/bin/gcp
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gcsplit -> ../Cellar/coreutils/9.7/bin/gcsplit
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gcut -> ../Cellar/coreutils/9.7/bin/gcut
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 gd2copypal -> ../Cellar/gd/2.3.3_6/bin/gd2copypal
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 gd2togif -> ../Cellar/gd/2.3.3_6/bin/gd2togif
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 gd2topng -> ../Cellar/gd/2.3.3_6/bin/gd2topng
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gdate -> ../Cellar/coreutils/9.7/bin/gdate
+lrwxr-xr-x    1 anita  admin     31 10 Sep 14:13 gdbus -> ../Cellar/glib/2.86.0/bin/gdbus
+lrwxr-xr-x    1 anita  admin     39 10 Sep 14:13 gdbus-codegen -> ../Cellar/glib/2.86.0/bin/gdbus-codegen
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 gdcmpgif -> ../Cellar/gd/2.3.3_6/bin/gdcmpgif
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gdd -> ../Cellar/coreutils/9.7/bin/gdd
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gdf -> ../Cellar/coreutils/9.7/bin/gdf
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gdir -> ../Cellar/coreutils/9.7/bin/gdir
+lrwxr-xr-x    1 anita  admin     38 18 Sep 15:52 gdircolors -> ../Cellar/coreutils/9.7/bin/gdircolors
+lrwxr-xr-x    1 anita  admin     36 18 Sep 15:52 gdirname -> ../Cellar/coreutils/9.7/bin/gdirname
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 gdparttopng -> ../Cellar/gd/2.3.3_6/bin/gdparttopng
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:18 gdtopng -> ../Cellar/gd/2.3.3_6/bin/gdtopng
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gdu -> ../Cellar/coreutils/9.7/bin/gdu
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gecho -> ../Cellar/coreutils/9.7/bin/gecho
+lrwxr-xr-x    1 anita  admin     52 15 Sep 13:18 generate_lut_template -> ../Cellar/jpeg-xl/0.11.1_3/bin/generate_lut_template
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 genv -> ../Cellar/coreutils/9.7/bin/genv
+lrwxr-xr-x    1 anita  admin     34  6 Sep 13:25 gettext -> ../Cellar/gettext/0.26/bin/gettext
+lrwxr-xr-x    1 anita  admin     37  6 Sep 13:25 gettext.sh -> ../Cellar/gettext/0.26/bin/gettext.sh
+lrwxr-xr-x    1 anita  admin     37  6 Sep 13:25 gettextize -> ../Cellar/gettext/0.26/bin/gettextize
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gexpand -> ../Cellar/coreutils/9.7/bin/gexpand
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gexpr -> ../Cellar/coreutils/9.7/bin/gexpr
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gfactor -> ../Cellar/coreutils/9.7/bin/gfactor
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gfalse -> ../Cellar/coreutils/9.7/bin/gfalse
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gfmt -> ../Cellar/coreutils/9.7/bin/gfmt
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gfold -> ../Cellar/coreutils/9.7/bin/gfold
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:19 gfortran -> ../Cellar/gcc/15.1.0/bin/gfortran
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:19 gfortran-15 -> ../Cellar/gcc/15.1.0/bin/gfortran-15
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 ggroups -> ../Cellar/coreutils/9.7/bin/ggroups
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 ghead -> ../Cellar/coreutils/9.7/bin/ghead
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 ghostid -> ../Cellar/coreutils/9.7/bin/ghostid
+lrwxr-xr-x    1 anita  admin     47 10 Sep 14:13 gi-compile-repository -> ../Cellar/glib/2.86.0/bin/gi-compile-repository
+lrwxr-xr-x    1 anita  admin     46 10 Sep 14:13 gi-decompile-typelib -> ../Cellar/glib/2.86.0/bin/gi-decompile-typelib
+lrwxr-xr-x    1 anita  admin     44 10 Sep 14:13 gi-inspect-typelib -> ../Cellar/glib/2.86.0/bin/gi-inspect-typelib
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gid -> ../Cellar/coreutils/9.7/bin/gid
+lrwxr-xr-x    1 anita  admin     34 10 Sep 14:13 gif2rgb -> ../Cellar/giflib/5.2.2/bin/gif2rgb
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 gif2webp -> ../Cellar/webp/1.6.0/bin/gif2webp
+lrwxr-xr-x    1 anita  admin     35 10 Sep 14:13 gifbuild -> ../Cellar/giflib/5.2.2/bin/gifbuild
+lrwxr-xr-x    1 anita  admin     35 10 Sep 14:13 gifclrmp -> ../Cellar/giflib/5.2.2/bin/gifclrmp
+lrwxr-xr-x    1 anita  admin     33 10 Sep 14:13 giffix -> ../Cellar/giflib/5.2.2/bin/giffix
+lrwxr-xr-x    1 anita  admin     34 10 Sep 14:13 giftext -> ../Cellar/giflib/5.2.2/bin/giftext
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 giftogd2 -> ../Cellar/gd/2.3.3_6/bin/giftogd2
+lrwxr-xr-x    1 anita  admin     34 10 Sep 14:13 giftool -> ../Cellar/giflib/5.2.2/bin/giftool
+lrwxr-xr-x    1 anita  admin     36 18 Sep 15:52 ginstall -> ../Cellar/coreutils/9.7/bin/ginstall
+lrwxr-xr-x    1 anita  admin     29 10 Sep 14:13 gio -> ../Cellar/glib/2.86.0/bin/gio
+lrwxr-xr-x    1 anita  admin     42 10 Sep 14:13 gio-querymodules -> ../Cellar/glib/2.86.0/bin/gio-querymodules
+lrwxr-xr-x    1 anita  admin     28  3 Nov 14:36 git -> ../Cellar/git/2.51.2/bin/git
+lrwxr-xr-x    1 anita  admin     38  3 Nov 14:36 git-cvsserver -> ../Cellar/git/2.51.2/bin/git-cvsserver
+lrwxr-xr-x    1 anita  admin     41  3 Nov 14:36 git-receive-pack -> ../Cellar/git/2.51.2/bin/git-receive-pack
+lrwxr-xr-x    1 anita  admin     34  3 Nov 14:36 git-shell -> ../Cellar/git/2.51.2/bin/git-shell
+lrwxr-xr-x    1 anita  admin     43  3 Nov 14:36 git-upload-archive -> ../Cellar/git/2.51.2/bin/git-upload-archive
+lrwxr-xr-x    1 anita  admin     40  3 Nov 14:36 git-upload-pack -> ../Cellar/git/2.51.2/bin/git-upload-pack
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gjoin -> ../Cellar/coreutils/9.7/bin/gjoin
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gkill -> ../Cellar/coreutils/9.7/bin/gkill
+lrwxr-xr-x    1 anita  admin     48 10 Sep 14:13 glib-compile-resources -> ../Cellar/glib/2.86.0/bin/glib-compile-resources
+lrwxr-xr-x    1 anita  admin     46 10 Sep 14:13 glib-compile-schemas -> ../Cellar/glib/2.86.0/bin/glib-compile-schemas
+lrwxr-xr-x    1 anita  admin     41 10 Sep 14:13 glib-genmarshal -> ../Cellar/glib/2.86.0/bin/glib-genmarshal
+lrwxr-xr-x    1 anita  admin     41 10 Sep 14:13 glib-gettextize -> ../Cellar/glib/2.86.0/bin/glib-gettextize
+lrwxr-xr-x    1 anita  admin     38 10 Sep 14:13 glib-mkenums -> ../Cellar/glib/2.86.0/bin/glib-mkenums
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 glibtool -> ../Cellar/libtool/2.5.4/bin/glibtool
+lrwxr-xr-x    1 anita  admin     39 15 Sep 13:18 glibtoolize -> ../Cellar/libtool/2.5.4/bin/glibtoolize
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 glink -> ../Cellar/coreutils/9.7/bin/glink
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gln -> ../Cellar/coreutils/9.7/bin/gln
+lrwxr-xr-x    1 anita  admin     36 18 Sep 15:52 glogname -> ../Cellar/coreutils/9.7/bin/glogname
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gls -> ../Cellar/coreutils/9.7/bin/gls
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gmd5sum -> ../Cellar/coreutils/9.7/bin/gmd5sum
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gmkdir -> ../Cellar/coreutils/9.7/bin/gmkdir
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gmkfifo -> ../Cellar/coreutils/9.7/bin/gmkfifo
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gmknod -> ../Cellar/coreutils/9.7/bin/gmknod
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gmktemp -> ../Cellar/coreutils/9.7/bin/gmktemp
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gmv -> ../Cellar/coreutils/9.7/bin/gmv
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gnice -> ../Cellar/coreutils/9.7/bin/gnice
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gnl -> ../Cellar/coreutils/9.7/bin/gnl
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gnohup -> ../Cellar/coreutils/9.7/bin/gnohup
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gnproc -> ../Cellar/coreutils/9.7/bin/gnproc
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gnumfmt -> ../Cellar/coreutils/9.7/bin/gnumfmt
+lrwxr-xr-x    1 anita  admin     39 10 Sep 14:13 gobject-query -> ../Cellar/glib/2.86.0/bin/gobject-query
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 god -> ../Cellar/coreutils/9.7/bin/god
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gpaste -> ../Cellar/coreutils/9.7/bin/gpaste
+lrwxr-xr-x    1 anita  admin     36 18 Sep 15:52 gpathchk -> ../Cellar/coreutils/9.7/bin/gpathchk
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gpinky -> ../Cellar/coreutils/9.7/bin/gpinky
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gpr -> ../Cellar/coreutils/9.7/bin/gpr
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 gprintenv -> ../Cellar/coreutils/9.7/bin/gprintenv
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gprintf -> ../Cellar/coreutils/9.7/bin/gprintf
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gptx -> ../Cellar/coreutils/9.7/bin/gptx
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gpwd -> ../Cellar/coreutils/9.7/bin/gpwd
+lrwxr-xr-x    1 anita  admin     42 10 Sep 14:13 gr2fonttest -> ../Cellar/graphite2/1.3.14/bin/gr2fonttest
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 greadlink -> ../Cellar/coreutils/9.7/bin/greadlink
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 grealpath -> ../Cellar/coreutils/9.7/bin/grealpath
+lrwxr-xr-x    1 anita  admin     35 10 Sep 14:13 gresource -> ../Cellar/glib/2.86.0/bin/gresource
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 grm -> ../Cellar/coreutils/9.7/bin/grm
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 grmdir -> ../Cellar/coreutils/9.7/bin/grmdir
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gruncon -> ../Cellar/coreutils/9.7/bin/gruncon
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gseq -> ../Cellar/coreutils/9.7/bin/gseq
+lrwxr-xr-x    1 anita  admin     35 10 Sep 14:13 gsettings -> ../Cellar/glib/2.86.0/bin/gsettings
+lrwxr-xr-x    1 anita  admin     36 18 Sep 15:52 gsha1sum -> ../Cellar/coreutils/9.7/bin/gsha1sum
+lrwxr-xr-x    1 anita  admin     38 18 Sep 15:52 gsha224sum -> ../Cellar/coreutils/9.7/bin/gsha224sum
+lrwxr-xr-x    1 anita  admin     38 18 Sep 15:52 gsha256sum -> ../Cellar/coreutils/9.7/bin/gsha256sum
+lrwxr-xr-x    1 anita  admin     38 18 Sep 15:52 gsha384sum -> ../Cellar/coreutils/9.7/bin/gsha384sum
+lrwxr-xr-x    1 anita  admin     38 18 Sep 15:52 gsha512sum -> ../Cellar/coreutils/9.7/bin/gsha512sum
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gshred -> ../Cellar/coreutils/9.7/bin/gshred
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gshuf -> ../Cellar/coreutils/9.7/bin/gshuf
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gsleep -> ../Cellar/coreutils/9.7/bin/gsleep
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gsort -> ../Cellar/coreutils/9.7/bin/gsort
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gsplit -> ../Cellar/coreutils/9.7/bin/gsplit
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gstat -> ../Cellar/coreutils/9.7/bin/gstat
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gstdbuf -> ../Cellar/coreutils/9.7/bin/gstdbuf
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gstty -> ../Cellar/coreutils/9.7/bin/gstty
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gsum -> ../Cellar/coreutils/9.7/bin/gsum
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gsync -> ../Cellar/coreutils/9.7/bin/gsync
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gtac -> ../Cellar/coreutils/9.7/bin/gtac
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gtail -> ../Cellar/coreutils/9.7/bin/gtail
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gtee -> ../Cellar/coreutils/9.7/bin/gtee
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gtest -> ../Cellar/coreutils/9.7/bin/gtest
+lrwxr-xr-x    1 anita  admin     33 10 Sep 14:13 gtester -> ../Cellar/glib/2.86.0/bin/gtester
+lrwxr-xr-x    1 anita  admin     40 10 Sep 14:13 gtester-report -> ../Cellar/glib/2.86.0/bin/gtester-report
+lrwxr-xr-x    1 anita  admin     36 18 Sep 15:52 gtimeout -> ../Cellar/coreutils/9.7/bin/gtimeout
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gtouch -> ../Cellar/coreutils/9.7/bin/gtouch
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gtr -> ../Cellar/coreutils/9.7/bin/gtr
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gtrue -> ../Cellar/coreutils/9.7/bin/gtrue
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 gtruncate -> ../Cellar/coreutils/9.7/bin/gtruncate
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gtsort -> ../Cellar/coreutils/9.7/bin/gtsort
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gtty -> ../Cellar/coreutils/9.7/bin/gtty
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 guname -> ../Cellar/coreutils/9.7/bin/guname
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 gunexpand -> ../Cellar/coreutils/9.7/bin/gunexpand
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 guniq -> ../Cellar/coreutils/9.7/bin/guniq
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gunlink -> ../Cellar/coreutils/9.7/bin/gunlink
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 guptime -> ../Cellar/coreutils/9.7/bin/guptime
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 gusers -> ../Cellar/coreutils/9.7/bin/gusers
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 gvdir -> ../Cellar/coreutils/9.7/bin/gvdir
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 gwc -> ../Cellar/coreutils/9.7/bin/gwc
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gwho -> ../Cellar/coreutils/9.7/bin/gwho
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 gwhoami -> ../Cellar/coreutils/9.7/bin/gwhoami
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 gyes -> ../Cellar/coreutils/9.7/bin/gyes
+lrwxr-xr-x    1 anita  admin     37 10 Sep 14:13 hb-info -> ../Cellar/harfbuzz/11.4.5/bin/hb-info
+lrwxr-xr-x    1 anita  admin     38 10 Sep 14:13 hb-shape -> ../Cellar/harfbuzz/11.4.5/bin/hb-shape
+lrwxr-xr-x    1 anita  admin     39 10 Sep 14:13 hb-subset -> ../Cellar/harfbuzz/11.4.5/bin/hb-subset
+lrwxr-xr-x    1 anita  admin     37 10 Sep 14:13 hb-view -> ../Cellar/harfbuzz/11.4.5/bin/hb-view
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 hostid -> ../Cellar/coreutils/9.7/bin/hostid
+lrwxr-xr-x@   1 root   admin     56 25 Sep 15:10 hub-tool -> /Applications/Docker.app/Contents/Resources/bin/hub-tool
+lrwxr-xr-x    1 anita  admin     43 15 Sep 13:18 icc_simplify -> ../Cellar/jpeg-xl/0.11.1_3/bin/icc_simplify
+lrwxr-xr-x    1 anita  admin     38  6 Sep 12:48 idle3 -> ../Cellar/python@3.13/3.13.7/bin/idle3
+lrwxr-xr-x    1 anita  admin     41  6 Sep 12:48 idle3.13 -> ../Cellar/python@3.13/3.13.7/bin/idle3.13
+lrwxr-xr-x    1 anita  admin     32  6 Sep 13:25 idn2 -> ../Cellar/libidn2/2.3.8/bin/idn2
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 ifnames -> ../Cellar/autoconf/2.72/bin/ifnames
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 img2webp -> ../Cellar/webp/1.6.0/bin/img2webp
+lrwxr-xr-x    1 anita  admin     34 15 Sep 13:18 isql -> ../Cellar/unixodbc/2.3.12/bin/isql
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 iusql -> ../Cellar/unixodbc/2.3.12/bin/iusql
+lrwxr-xr-x    1 anita  admin     39 10 Sep 14:13 jpegtran -> ../Cellar/jpeg-turbo/3.1.2/bin/jpegtran
+lrwxr-xr-x    1 anita  admin     37 10 Sep 14:13 jpgicc -> ../Cellar/little-cms2/2.17/bin/jpgicc
+lrwxr-xr-x    1 anita  admin     44 15 Sep 13:18 jxl_from_tree -> ../Cellar/jpeg-xl/0.11.1_3/bin/jxl_from_tree
+lrwxr-xr-x    1 anita  admin     38 15 Sep 13:18 jxlinfo -> ../Cellar/jpeg-xl/0.11.1_3/bin/jxlinfo
+lrwxr-xr-x@   1 root   admin     55 25 Sep 15:10 kubectl -> /Applications/Docker.app/Contents/Resources/bin/kubectl
+lrwxr-xr-x@   1 root   admin     55 25 Sep 15:10 kubectl.docker -> /Applications/Docker.app/Contents/Resources/bin/kubectl
+lrwxr-xr-x    1 anita  admin     47 15 Sep 13:18 libdeflate-gunzip -> ../Cellar/libdeflate/1.24/bin/libdeflate-gunzip
+lrwxr-xr-x    1 anita  admin     45 15 Sep 13:18 libdeflate-gzip -> ../Cellar/libdeflate/1.24/bin/libdeflate-gzip
+lrwxr-xr-x    1 anita  admin     41 10 Sep 14:13 libpng-config -> ../Cellar/libpng/1.6.50/bin/libpng-config
+lrwxr-xr-x    1 anita  admin     43 10 Sep 14:13 libpng16-config -> ../Cellar/libpng/1.6.50/bin/libpng16-config
+lrwxr-xr-x    1 anita  admin     38 10 Sep 14:13 linkicc -> ../Cellar/little-cms2/2.17/bin/linkicc
+lrwxr-xr-x    1 anita  admin     45 15 Sep 13:18 local_tone_map -> ../Cellar/jpeg-xl/0.11.1_3/bin/local_tone_map
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:19 lto-dump-15 -> ../Cellar/gcc/15.1.0/bin/lto-dump-15
+lrwxr-xr-x    1 anita  admin     28 10 Sep 14:13 lz4 -> ../Cellar/lz4/1.10.0/bin/lz4
+lrwxr-xr-x    1 anita  admin     29 10 Sep 14:13 lz4c -> ../Cellar/lz4/1.10.0/bin/lz4c
+lrwxr-xr-x    1 anita  admin     31 10 Sep 14:13 lz4cat -> ../Cellar/lz4/1.10.0/bin/lz4cat
+lrwxr-xr-x    1 anita  admin     28  6 Sep 12:48 lzcat -> ../Cellar/xz/5.8.1/bin/lzcat
+lrwxr-xr-x    1 anita  admin     28  6 Sep 12:48 lzcmp -> ../Cellar/xz/5.8.1/bin/lzcmp
+lrwxr-xr-x    1 anita  admin     29  6 Sep 12:48 lzdiff -> ../Cellar/xz/5.8.1/bin/lzdiff
+lrwxr-xr-x    1 anita  admin     30  6 Sep 12:48 lzegrep -> ../Cellar/xz/5.8.1/bin/lzegrep
+lrwxr-xr-x    1 anita  admin     30  6 Sep 12:48 lzfgrep -> ../Cellar/xz/5.8.1/bin/lzfgrep
+lrwxr-xr-x    1 anita  admin     29  6 Sep 12:48 lzgrep -> ../Cellar/xz/5.8.1/bin/lzgrep
+lrwxr-xr-x    1 anita  admin     29  6 Sep 12:48 lzless -> ../Cellar/xz/5.8.1/bin/lzless
+lrwxr-xr-x    1 anita  admin     27  6 Sep 12:48 lzma -> ../Cellar/xz/5.8.1/bin/lzma
+lrwxr-xr-x    1 anita  admin     30  6 Sep 12:48 lzmadec -> ../Cellar/xz/5.8.1/bin/lzmadec
+lrwxr-xr-x    1 anita  admin     31  6 Sep 12:48 lzmainfo -> ../Cellar/xz/5.8.1/bin/lzmainfo
+lrwxr-xr-x    1 anita  admin     29  6 Sep 12:48 lzmore -> ../Cellar/xz/5.8.1/bin/lzmore
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 md5sum -> ../Cellar/coreutils/9.7/bin/md5sum
+lrwxr-xr-x    1 anita  admin     36  6 Sep 13:25 msgattrib -> ../Cellar/gettext/0.26/bin/msgattrib
+lrwxr-xr-x    1 anita  admin     33  6 Sep 13:25 msgcat -> ../Cellar/gettext/0.26/bin/msgcat
+lrwxr-xr-x    1 anita  admin     33  6 Sep 13:25 msgcmp -> ../Cellar/gettext/0.26/bin/msgcmp
+lrwxr-xr-x    1 anita  admin     34  6 Sep 13:25 msgcomm -> ../Cellar/gettext/0.26/bin/msgcomm
+lrwxr-xr-x    1 anita  admin     34  6 Sep 13:25 msgconv -> ../Cellar/gettext/0.26/bin/msgconv
+lrwxr-xr-x    1 anita  admin     32  6 Sep 13:25 msgen -> ../Cellar/gettext/0.26/bin/msgen
+lrwxr-xr-x    1 anita  admin     34  6 Sep 13:25 msgexec -> ../Cellar/gettext/0.26/bin/msgexec
+lrwxr-xr-x    1 anita  admin     36  6 Sep 13:25 msgfilter -> ../Cellar/gettext/0.26/bin/msgfilter
+lrwxr-xr-x    1 anita  admin     33  6 Sep 13:25 msgfmt -> ../Cellar/gettext/0.26/bin/msgfmt
+lrwxr-xr-x    1 anita  admin     34  6 Sep 13:25 msggrep -> ../Cellar/gettext/0.26/bin/msggrep
+lrwxr-xr-x    1 anita  admin     34  6 Sep 13:25 msginit -> ../Cellar/gettext/0.26/bin/msginit
+lrwxr-xr-x    1 anita  admin     35  6 Sep 13:25 msgmerge -> ../Cellar/gettext/0.26/bin/msgmerge
+lrwxr-xr-x    1 anita  admin     35  6 Sep 13:25 msgunfmt -> ../Cellar/gettext/0.26/bin/msgunfmt
+lrwxr-xr-x    1 anita  admin     34  6 Sep 13:25 msguniq -> ../Cellar/gettext/0.26/bin/msguniq
+lrwxr-xr-x    1 anita  admin     35  6 Sep 13:25 ngettext -> ../Cellar/gettext/0.26/bin/ngettext
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 nproc -> ../Cellar/coreutils/9.7/bin/nproc
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 numfmt -> ../Cellar/coreutils/9.7/bin/numfmt
+lrwxr-xr-x    1 anita  admin     41 15 Sep 13:18 odbc_config -> ../Cellar/unixodbc/2.3.12/bin/odbc_config
+lrwxr-xr-x    1 anita  admin     38 15 Sep 13:18 odbcinst -> ../Cellar/unixodbc/2.3.12/bin/odbcinst
+lrwxr-xr-x    1 anita  admin     42 15 Sep 13:18 ojph_compress -> ../Cellar/openjph/0.23.0/bin/ojph_compress
+lrwxr-xr-x    1 anita  admin     40 15 Sep 13:18 ojph_expand -> ../Cellar/openjph/0.23.0/bin/ojph_expand
+lrwxr-xr-x    1 anita  admin     42 15 Sep 13:18 onig-config -> ../Cellar/oniguruma/6.9.10/bin/onig-config
+lrwxr-xr-x    1 anita  admin     37  4 Nov 10:49 openssl -> ../Cellar/openssl@3/3.6.0/bin/openssl
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:18 osql -> ../Cellar/freetds/1.5.6/bin/osql
+lrwxr-xr-x    1 anita  admin     35 10 Sep 14:13 pal2rgb -> ../Cellar/libtiff/4.7.0/bin/pal2rgb
+lrwxr-xr-x    1 anita  admin     38  3 Nov 14:36 pcre2-config -> ../Cellar/pcre2/10.47/bin/pcre2-config
+lrwxr-xr-x    1 anita  admin     35  3 Nov 14:36 pcre2grep -> ../Cellar/pcre2/10.47/bin/pcre2grep
+lrwxr-xr-x    1 anita  admin     35  3 Nov 14:36 pcre2test -> ../Cellar/pcre2/10.47/bin/pcre2test
+lrwxr-xr-x    1 anita  admin     29 15 Sep 13:19 pear -> ../Cellar/php/8.4.12/bin/pear
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:19 peardev -> ../Cellar/php/8.4.12/bin/peardev
+lrwxr-xr-x    1 anita  admin     29 15 Sep 13:19 pecl -> ../Cellar/php/8.4.12/bin/pecl
+lrwxr-xr-x    1 anita  admin     29 15 Sep 13:19 phar -> ../Cellar/php/8.4.12/bin/phar
+lrwxr-xr-x    1 anita  admin     34 15 Sep 13:19 phar.phar -> ../Cellar/php/8.4.12/bin/phar.phar
+lrwxr-xr-x    1 anita  admin     28 15 Sep 13:19 php -> ../Cellar/php/8.4.12/bin/php
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:19 php-cgi -> ../Cellar/php/8.4.12/bin/php-cgi
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:19 php-config -> ../Cellar/php/8.4.12/bin/php-config
+lrwxr-xr-x    1 anita  admin     31 15 Sep 13:19 phpdbg -> ../Cellar/php/8.4.12/bin/phpdbg
+lrwxr-xr-x    1 anita  admin     31 15 Sep 13:19 phpize -> ../Cellar/php/8.4.12/bin/phpize
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 pinky -> ../Cellar/coreutils/9.7/bin/pinky
+lrwxr-xr-x    1 anita  admin     37  6 Sep 12:48 pip3 -> ../Cellar/python@3.13/3.13.7/bin/pip3
+lrwxr-xr-x    1 anita  admin     40  6 Sep 12:48 pip3.13 -> ../Cellar/python@3.13/3.13.7/bin/pip3.13
+lrwxr-xr-x    1 anita  admin     40 10 Sep 14:13 png-fix-itxt -> ../Cellar/libpng/1.6.50/bin/png-fix-itxt
+lrwxr-xr-x    1 anita  admin     34 10 Sep 14:13 pngfix -> ../Cellar/libpng/1.6.50/bin/pngfix
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:18 pngtogd -> ../Cellar/gd/2.3.3_6/bin/pngtogd
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 pngtogd2 -> ../Cellar/gd/2.3.3_6/bin/pngtogd2
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 ppm2tiff -> ../Cellar/libtiff/4.7.0/bin/ppm2tiff
+lrwxr-xr-x    1 anita  admin     40 15 Sep 13:18 pq_to_hlg -> ../Cellar/jpeg-xl/0.11.1_3/bin/pq_to_hlg
+lrwxr-xr-x    1 anita  admin     41  6 Sep 13:25 printf_gettext -> ../Cellar/gettext/0.26/bin/printf_gettext
+lrwxr-xr-x    1 anita  admin     42  6 Sep 13:25 printf_ngettext -> ../Cellar/gettext/0.26/bin/printf_ngettext
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 psicc -> ../Cellar/little-cms2/2.17/bin/psicc
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 ptx -> ../Cellar/coreutils/9.7/bin/ptx
+lrwxr-xr-x    1 anita  admin     39  6 Sep 12:48 pydoc3 -> ../Cellar/python@3.13/3.13.7/bin/pydoc3
+lrwxr-xr-x    1 anita  admin     42  6 Sep 12:48 pydoc3.13 -> ../Cellar/python@3.13/3.13.7/bin/pydoc3.13
+lrwxr-xr-x    1 anita  admin     40  6 Sep 12:48 python3 -> ../Cellar/python@3.13/3.13.7/bin/python3
+lrwxr-xr-x    1 anita  admin     47  6 Sep 12:48 python3-config -> ../Cellar/python@3.13/3.13.7/bin/python3-config
+lrwxr-xr-x    1 anita  admin     43  6 Sep 12:48 python3.13 -> ../Cellar/python@3.13/3.13.7/bin/python3.13
+lrwxr-xr-x    1 anita  admin     50  6 Sep 12:48 python3.13-config -> ../Cellar/python@3.13/3.13.7/bin/python3.13-config
+lrwxr-xr-x    1 anita  admin     30 10 Sep 14:13 pzstd -> ../Cellar/zstd/1.5.7/bin/pzstd
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 raw2tiff -> ../Cellar/libtiff/4.7.0/bin/raw2tiff
+lrwxr-xr-x    1 anita  admin     39 10 Sep 14:13 rdjpgcom -> ../Cellar/jpeg-turbo/3.1.2/bin/rdjpgcom
+lrwxr-xr-x    1 anita  admin     42  6 Sep 13:25 recode-sr-latin -> ../Cellar/gettext/0.26/bin/recode-sr-latin
+lrwxr-xr-x    1 anita  admin     41 15 Sep 13:18 render_hlg -> ../Cellar/jpeg-xl/0.11.1_3/bin/render_hlg
+lrwxr-xr-x    1 anita  admin     46 15 Sep 13:18 rtmpdump -> ../Cellar/rtmpdump/2.4-20151223_3/bin/rtmpdump
+lrwxr-xr-x    1 anita  admin     44 15 Sep 13:18 rtmpgw -> ../Cellar/rtmpdump/2.4-20151223_3/bin/rtmpgw
+lrwxr-xr-x    1 anita  admin     45 15 Sep 13:18 rtmpsrv -> ../Cellar/rtmpdump/2.4-20151223_3/bin/rtmpsrv
+lrwxr-xr-x    1 anita  admin     46 15 Sep 13:18 rtmpsuck -> ../Cellar/rtmpdump/2.4-20151223_3/bin/rtmpsuck
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 runcon -> ../Cellar/coreutils/9.7/bin/runcon
+lrwxr-xr-x    1 anita  admin     31  3 Nov 14:36 scalar -> ../Cellar/git/2.51.2/bin/scalar
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 sha1sum -> ../Cellar/coreutils/9.7/bin/sha1sum
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 sha224sum -> ../Cellar/coreutils/9.7/bin/sha224sum
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 sha256sum -> ../Cellar/coreutils/9.7/bin/sha256sum
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 sha384sum -> ../Cellar/coreutils/9.7/bin/sha384sum
+lrwxr-xr-x    1 anita  admin     37 18 Sep 15:52 sha512sum -> ../Cellar/coreutils/9.7/bin/sha512sum
+lrwxr-xr-x    1 anita  admin     33 18 Sep 15:52 shred -> ../Cellar/coreutils/9.7/bin/shred
+lrwxr-xr-x    1 anita  admin     32 18 Sep 15:52 shuf -> ../Cellar/coreutils/9.7/bin/shuf
+lrwxr-xr-x    1 anita  admin     39 15 Sep 13:18 slencheck -> ../Cellar/unixodbc/2.3.12/bin/slencheck
+lrwxr-xr-x    1 anita  admin     46 15 Sep 13:18 ssimulacra_main -> ../Cellar/jpeg-xl/0.11.1_3/bin/ssimulacra_main
+lrwxr-xr-x    1 anita  admin     42 15 Sep 13:18 ssimulacra2 -> ../Cellar/jpeg-xl/0.11.1_3/bin/ssimulacra2
+lrwxr-xr-x    1 anita  admin     34 18 Sep 15:52 stdbuf -> ../Cellar/coreutils/9.7/bin/stdbuf
+lrwxr-xr-x    1 anita  admin     31 18 Sep 15:52 tac -> ../Cellar/coreutils/9.7/bin/tac
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 tdspool -> ../Cellar/freetds/1.5.6/bin/tdspool
+lrwxr-xr-x    1 anita  admin     46 15 Sep 13:18 texture_to_cube -> ../Cellar/jpeg-xl/0.11.1_3/bin/texture_to_cube
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 tidy -> ../Cellar/tidy-html5/5.8.0/bin/tidy
+lrwxr-xr-x    1 anita  admin     35 10 Sep 14:13 tiff2bw -> ../Cellar/libtiff/4.7.0/bin/tiff2bw
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 tiff2pdf -> ../Cellar/libtiff/4.7.0/bin/tiff2pdf
+lrwxr-xr-x    1 anita  admin     35 10 Sep 14:13 tiff2ps -> ../Cellar/libtiff/4.7.0/bin/tiff2ps
+lrwxr-xr-x    1 anita  admin     37 10 Sep 14:13 tiff2rgba -> ../Cellar/libtiff/4.7.0/bin/tiff2rgba
+lrwxr-xr-x    1 anita  admin     35 10 Sep 14:13 tiffcmp -> ../Cellar/libtiff/4.7.0/bin/tiffcmp
+lrwxr-xr-x    1 anita  admin     34 10 Sep 14:13 tiffcp -> ../Cellar/libtiff/4.7.0/bin/tiffcp
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 tiffcrop -> ../Cellar/libtiff/4.7.0/bin/tiffcrop
+lrwxr-xr-x    1 anita  admin     38 10 Sep 14:13 tiffdither -> ../Cellar/libtiff/4.7.0/bin/tiffdither
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 tiffdump -> ../Cellar/libtiff/4.7.0/bin/tiffdump
+lrwxr-xr-x    1 anita  admin     36 10 Sep 14:13 tiffinfo -> ../Cellar/libtiff/4.7.0/bin/tiffinfo
+lrwxr-xr-x    1 anita  admin     38 10 Sep 14:13 tiffmedian -> ../Cellar/libtiff/4.7.0/bin/tiffmedian
+lrwxr-xr-x    1 anita  admin     35 10 Sep 14:13 tiffset -> ../Cellar/libtiff/4.7.0/bin/tiffset
+lrwxr-xr-x    1 anita  admin     37 10 Sep 14:13 tiffsplit -> ../Cellar/libtiff/4.7.0/bin/tiffsplit
+lrwxr-xr-x    1 anita  admin     37 10 Sep 14:13 tificc -> ../Cellar/little-cms2/2.17/bin/tificc
+lrwxr-xr-x    1 anita  admin     35 18 Sep 15:52 timeout -> ../Cellar/coreutils/9.7/bin/timeout
+lrwxr-xr-x    1 anita  admin     38 10 Sep 14:13 tjbench -> ../Cellar/jpeg-turbo/3.1.2/bin/tjbench
+lrwxr-xr-x    1 anita  admin     39 15 Sep 13:18 tone_map -> ../Cellar/jpeg-xl/0.11.1_3/bin/tone_map
+lrwxr-xr-x    1 anita  admin     39 10 Sep 14:13 transicc -> ../Cellar/little-cms2/2.17/bin/transicc
+lrwxr-xr-x    1 anita  admin     29 30 Oct 10:28 tree -> ../Cellar/tree/2.2.1/bin/tree
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:18 tsql -> ../Cellar/freetds/1.5.6/bin/tsql
+lrwxr-xr-x    1 anita  admin     30 10 Sep 14:13 unlz4 -> ../Cellar/lz4/1.10.0/bin/unlz4
+lrwxr-xr-x    1 anita  admin     29  6 Sep 12:48 unlzma -> ../Cellar/xz/5.8.1/bin/unlzma
+lrwxr-xr-x    1 anita  admin     27  6 Sep 12:48 unxz -> ../Cellar/xz/5.8.1/bin/unxz
+lrwxr-xr-x    1 anita  admin     31 10 Sep 14:13 unzstd -> ../Cellar/zstd/1.5.7/bin/unzstd
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:18 vmaf -> ../Cellar/libvmaf/3.0.0/bin/vmaf
+lrwxr-xr-x    1 anita  admin     30 15 Sep 13:18 vwebp -> ../Cellar/webp/1.6.0/bin/vwebp
+lrwxr-xr-x    1 anita  admin     33 15 Sep 13:18 webpinfo -> ../Cellar/webp/1.6.0/bin/webpinfo
+lrwxr-xr-x    1 anita  admin     32 15 Sep 13:18 webpmux -> ../Cellar/webp/1.6.0/bin/webpmux
+lrwxr-xr-x    1 anita  admin     31 15 Sep 13:18 webpng -> ../Cellar/gd/2.3.3_6/bin/webpng
+lrwxr-xr-x    1 anita  admin     30  6 Sep 13:25 wget -> ../Cellar/wget/1.25.0/bin/wget
+lrwxr-xr-x    1 anita  admin     39  6 Sep 12:48 wheel3 -> ../Cellar/python@3.13/3.13.7/bin/wheel3
+lrwxr-xr-x    1 anita  admin     42  6 Sep 12:48 wheel3.13 -> ../Cellar/python@3.13/3.13.7/bin/wheel3.13
+lrwxr-xr-x    1 anita  admin     39 10 Sep 14:13 wrjpgcom -> ../Cellar/jpeg-turbo/3.1.2/bin/wrjpgcom
+lrwxr-xr-x    1 anita  admin     53 15 Sep 13:19 x86_64-apple-darwin24-c++-15 -> ../Cellar/gcc/15.1.0/bin/x86_64-apple-darwin24-c++-15
+lrwxr-xr-x    1 anita  admin     53 15 Sep 13:19 x86_64-apple-darwin24-g++-15 -> ../Cellar/gcc/15.1.0/bin/x86_64-apple-darwin24-g++-15
+lrwxr-xr-x    1 anita  admin     53 15 Sep 13:19 x86_64-apple-darwin24-gcc-15 -> ../Cellar/gcc/15.1.0/bin/x86_64-apple-darwin24-gcc-15
+lrwxr-xr-x    1 anita  admin     56 15 Sep 13:19 x86_64-apple-darwin24-gcc-ar-15 -> ../Cellar/gcc/15.1.0/bin/x86_64-apple-darwin24-gcc-ar-15
+lrwxr-xr-x    1 anita  admin     56 15 Sep 13:19 x86_64-apple-darwin24-gcc-nm-15 -> ../Cellar/gcc/15.1.0/bin/x86_64-apple-darwin24-gcc-nm-15
+lrwxr-xr-x    1 anita  admin     60 15 Sep 13:19 x86_64-apple-darwin24-gcc-ranlib-15 -> ../Cellar/gcc/15.1.0/bin/x86_64-apple-darwin24-gcc-ranlib-15
+lrwxr-xr-x    1 anita  admin     58 15 Sep 13:19 x86_64-apple-darwin24-gfortran-15 -> ../Cellar/gcc/15.1.0/bin/x86_64-apple-darwin24-gfortran-15
+lrwxr-xr-x    1 anita  admin     35  6 Sep 13:25 xgettext -> ../Cellar/gettext/0.26/bin/xgettext
+lrwxr-xr-x    1 anita  admin     40 15 Sep 13:18 xyb_range -> ../Cellar/jpeg-xl/0.11.1_3/bin/xyb_range
+lrwxr-xr-x    1 anita  admin     25  6 Sep 12:48 xz -> ../Cellar/xz/5.8.1/bin/xz
+lrwxr-xr-x    1 anita  admin     28  6 Sep 12:48 xzcat -> ../Cellar/xz/5.8.1/bin/xzcat
+lrwxr-xr-x    1 anita  admin     28  6 Sep 12:48 xzcmp -> ../Cellar/xz/5.8.1/bin/xzcmp
+lrwxr-xr-x    1 anita  admin     28  6 Sep 12:48 xzdec -> ../Cellar/xz/5.8.1/bin/xzdec
+lrwxr-xr-x    1 anita  admin     29  6 Sep 12:48 xzdiff -> ../Cellar/xz/5.8.1/bin/xzdiff
+lrwxr-xr-x    1 anita  admin     30  6 Sep 12:48 xzegrep -> ../Cellar/xz/5.8.1/bin/xzegrep
+lrwxr-xr-x    1 anita  admin     30  6 Sep 12:48 xzfgrep -> ../Cellar/xz/5.8.1/bin/xzfgrep
+lrwxr-xr-x    1 anita  admin     29  6 Sep 12:48 xzgrep -> ../Cellar/xz/5.8.1/bin/xzgrep
+lrwxr-xr-x    1 anita  admin     29  6 Sep 12:48 xzless -> ../Cellar/xz/5.8.1/bin/xzless
+lrwxr-xr-x    1 anita  admin     29  6 Sep 12:48 xzmore -> ../Cellar/xz/5.8.1/bin/xzmore
+lrwxr-xr-x    1 anita  admin     34 15 Sep 13:18 zipcmp -> ../Cellar/libzip/1.11.4/bin/zipcmp
+lrwxr-xr-x    1 anita  admin     36 15 Sep 13:18 zipmerge -> ../Cellar/libzip/1.11.4/bin/zipmerge
+lrwxr-xr-x    1 anita  admin     35 15 Sep 13:18 ziptool -> ../Cellar/libzip/1.11.4/bin/ziptool
+lrwxr-xr-x    1 anita  admin     29 10 Sep 14:13 zstd -> ../Cellar/zstd/1.5.7/bin/zstd
+lrwxr-xr-x    1 anita  admin     32 10 Sep 14:13 zstdcat -> ../Cellar/zstd/1.5.7/bin/zstdcat
+lrwxr-xr-x    1 anita  admin     33 10 Sep 14:13 zstdgrep -> ../Cellar/zstd/1.5.7/bin/zstdgrep
+lrwxr-xr-x    1 anita  admin     33 10 Sep 14:13 zstdless -> ../Cellar/zstd/1.5.7/bin/zstdless
+lrwxr-xr-x    1 anita  admin     31 10 Sep 14:13 zstdmt -> ../Cellar/zstd/1.5.7/bin/zstdmt
+anita@quintypes-MacBook-Pro bin % cd ..
+anita@quintypes-MacBook-Pro local % cd ..
+anita@quintypes-MacBook-Pro /usr % cd ..
+anita@quintypes-MacBook-Pro / % hombrew git
+zsh: command not found: hombrew
+anita@quintypes-MacBook-Pro / % git config edit --global
+error: there was a problem with the editor 'vi'
+anita@quintypes-MacBook-Pro / % cd Users/anita 
+anita@quintypes-MacBook-Pro ~ % ls -l
+total 16
+drwxrwxrwt    4 anita  staff   128  4 Sep 18:01 composer
+drwx------+   4 anita  staff   128  4 Sep 20:15 Desktop
+drwx------+   6 anita  staff   192  4 Sep 22:27 Documents
+drwx------+ 175 anita  staff  5600  6 Nov 13:00 Downloads
+drwxr-xr-x    3 anita  staff    96  6 Nov 09:10 extract_tar
+drwxr-xr-x    6 anita  staff   192  3 Nov 16:51 git_demo
+drwx------@  85 anita  staff  2720  8 Oct 10:47 Library
+drwxr-xr-x    9 anita  staff   288  6 Nov 11:48 linux_training
+drwx------    5 anita  staff   160  8 Sep 11:29 Movies
+drwx------+   4 anita  staff   128 17 Oct 09:01 Music
+drwxr-xr-x    8 anita  staff   256  4 Sep 21:48 mydocs
+-rw-r--r--    1 anita  staff  5120  6 Nov 09:06 new.tar
+drwx------+  33 anita  staff  1056  6 Nov 15:13 Pictures
+drwxr-xr-x@   4 anita  staff   128 15 Sep 14:43 Postman
+drwxr-xr-x+   5 anita  staff   160  4 Sep 19:51 Public
+drwxrwxrwt   21 anita  staff   672 31 Oct 11:57 quintype
+drwx------    3 anita  staff    96 29 Sep 14:31 Sites
+-rw-r--r--    1 anita  staff     0 31 Oct 11:30 test2
+anita@quintypes-MacBook-Pro ~ % ls -la
+total 488
+drwxr-x---+  42 anita  staff    1344  7 Nov 11:53 .
+drwxr-xr-x    6 root   admin     192  4 Sep 20:12 ..
+drwxr-xr-x@  17 anita  staff     544  8 Sep 15:07 .anydesk
+drwxr-xr-x    4 anita  staff     128  6 Sep 12:50 .aws
+-rw-------    1 anita  staff       3  4 Sep 11:52 .CFUserTextEncoding
+drwx------    3 anita  staff      96 29 Sep 12:49 .config
+drwxr-xr-x@  13 anita  staff     416 29 Sep 14:13 .docker
+-rw-r--r--@   1 anita  staff   16388  6 Nov 11:17 .DS_Store
+-rw-r--r--    1 anita  staff     151  3 Nov 16:27 .gitconfig
+-rw-------    1 anita  staff      20  7 Nov 11:45 .lesshst
+-rw-------    1 anita  staff     166 22 Oct 15:47 .mysql_history
+-rw-------    1 anita  staff      54  7 Nov 11:27 .node_repl_history
+drwxr-xr-x    4 anita  staff     128 29 Sep 11:59 .npm
+drwxr-xr-x   32 anita  staff    1024 29 Sep 12:04 .nvm
+-rw-r--r--    1 anita  staff      44  4 Nov 10:42 .python_history
+drwxr-xr-x@  46 anita  staff    1472  5 Nov 15:22 .ScreamingFrogSEOSpider
+drwx------+ 771 anita  staff   24672  5 Nov 15:18 .Trash
+-rw-------    1 anita  staff    9400  7 Nov 11:53 .viminfo
+drwxr-xr-x@   5 anita  staff     160 10 Sep 14:08 .vscode
+drwx------    4 anita  staff     128 31 Oct 12:07 .zcompcache
+-rw-r--r--    1 anita  staff   49139  3 Nov 14:37 .zcompdump
+-rw-------    1 anita  staff  134499  5 Nov 14:04 .zsh_history
+drwx------   75 anita  staff    2400  7 Nov 11:42 .zsh_sessions
+-rw-r--r--    1 anita  staff     145 29 Sep 12:43 .zshrc
+drwxrwxrwt    4 anita  staff     128  4 Sep 18:01 composer
+drwx------+   4 anita  staff     128  4 Sep 20:15 Desktop
+drwx------+   6 anita  staff     192  4 Sep 22:27 Documents
+drwx------+ 175 anita  staff    5600  6 Nov 13:00 Downloads
+drwxr-xr-x    3 anita  staff      96  6 Nov 09:10 extract_tar
+drwxr-xr-x    6 anita  staff     192  3 Nov 16:51 git_demo
+drwx------@  85 anita  staff    2720  8 Oct 10:47 Library
+drwxr-xr-x    9 anita  staff     288  6 Nov 11:48 linux_training
+drwx------    5 anita  staff     160  8 Sep 11:29 Movies
+drwx------+   4 anita  staff     128 17 Oct 09:01 Music
+drwxr-xr-x    8 anita  staff     256  4 Sep 21:48 mydocs
+-rw-r--r--    1 anita  staff    5120  6 Nov 09:06 new.tar
+drwx------+  33 anita  staff    1056  6 Nov 15:13 Pictures
+drwxr-xr-x@   4 anita  staff     128 15 Sep 14:43 Postman
+drwxr-xr-x+   5 anita  staff     160  4 Sep 19:51 Public
+drwxrwxrwt   21 anita  staff     672 31 Oct 11:57 quintype
+drwx------    3 anita  staff      96 29 Sep 14:31 Sites
+-rw-r--r--    1 anita  staff       0 31 Oct 11:30 test2
+anita@quintypes-MacBook-Pro ~ % cat .gitconfig
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = anitha
+	email = anitha.kode@quintype.com
+anita@quintypes-MacBook-Pro ~ % ls -la
+total 488
+drwxr-x---+  42 anita  staff    1344  7 Nov 11:53 .
+drwxr-xr-x    6 root   admin     192  4 Sep 20:12 ..
+drwxr-xr-x@  17 anita  staff     544  8 Sep 15:07 .anydesk
+drwxr-xr-x    4 anita  staff     128  6 Sep 12:50 .aws
+-rw-------    1 anita  staff       3  4 Sep 11:52 .CFUserTextEncoding
+drwx------    3 anita  staff      96 29 Sep 12:49 .config
+drwxr-xr-x@  13 anita  staff     416 29 Sep 14:13 .docker
+-rw-r--r--@   1 anita  staff   16388  6 Nov 11:17 .DS_Store
+-rw-r--r--    1 anita  staff     151  3 Nov 16:27 .gitconfig
+-rw-------    1 anita  staff      20  7 Nov 11:45 .lesshst
+-rw-------    1 anita  staff     166 22 Oct 15:47 .mysql_history
+-rw-------    1 anita  staff      54  7 Nov 11:27 .node_repl_history
+drwxr-xr-x    4 anita  staff     128 29 Sep 11:59 .npm
+drwxr-xr-x   32 anita  staff    1024 29 Sep 12:04 .nvm
+-rw-r--r--    1 anita  staff      44  4 Nov 10:42 .python_history
+drwxr-xr-x@  46 anita  staff    1472  5 Nov 15:22 .ScreamingFrogSEOSpider
+drwx------+ 771 anita  staff   24672  5 Nov 15:18 .Trash
+-rw-------    1 anita  staff    9400  7 Nov 11:53 .viminfo
+drwxr-xr-x@   5 anita  staff     160 10 Sep 14:08 .vscode
+drwx------    4 anita  staff     128 31 Oct 12:07 .zcompcache
+-rw-r--r--    1 anita  staff   49139  3 Nov 14:37 .zcompdump
+-rw-------    1 anita  staff  134499  5 Nov 14:04 .zsh_history
+drwx------   75 anita  staff    2400  7 Nov 11:42 .zsh_sessions
+-rw-r--r--    1 anita  staff     145 29 Sep 12:43 .zshrc
+drwxrwxrwt    4 anita  staff     128  4 Sep 18:01 composer
+drwx------+   4 anita  staff     128  4 Sep 20:15 Desktop
+drwx------+   6 anita  staff     192  4 Sep 22:27 Documents
+drwx------+ 175 anita  staff    5600  6 Nov 13:00 Downloads
+drwxr-xr-x    3 anita  staff      96  6 Nov 09:10 extract_tar
+drwxr-xr-x    6 anita  staff     192  3 Nov 16:51 git_demo
+drwx------@  85 anita  staff    2720  8 Oct 10:47 Library
+drwxr-xr-x    9 anita  staff     288  6 Nov 11:48 linux_training
+drwx------    5 anita  staff     160  8 Sep 11:29 Movies
+drwx------+   4 anita  staff     128 17 Oct 09:01 Music
+drwxr-xr-x    8 anita  staff     256  4 Sep 21:48 mydocs
+-rw-r--r--    1 anita  staff    5120  6 Nov 09:06 new.tar
+drwx------+  33 anita  staff    1056  6 Nov 15:13 Pictures
+drwxr-xr-x@   4 anita  staff     128 15 Sep 14:43 Postman
+drwxr-xr-x+   5 anita  staff     160  4 Sep 19:51 Public
+drwxrwxrwt   21 anita  staff     672 31 Oct 11:57 quintype
+drwx------    3 anita  staff      96 29 Sep 14:31 Sites
+-rw-r--r--    1 anita  staff       0 31 Oct 11:30 test2
+anita@quintypes-MacBook-Pro ~ % cd git_demo 
+anita@quintypes-MacBook-Pro git_demo % cd ..
+anita@quintypes-MacBook-Pro ~ % cd ..
+anita@quintypes-MacBook-Pro /Users % cd anita 
+anita@quintypes-MacBook-Pro ~ % git config
+error: no action specified
+anita@quintypes-MacBook-Pro ~ % git config edit --global
+anita@quintypes-MacBook-Pro ~ % ls -la                  
+total 488
+drwxr-x---+  42 anita  staff    1344  7 Nov 11:59 .
+drwxr-xr-x    6 root   admin     192  4 Sep 20:12 ..
+drwxr-xr-x@  17 anita  staff     544  8 Sep 15:07 .anydesk
+drwxr-xr-x    4 anita  staff     128  6 Sep 12:50 .aws
+-rw-------    1 anita  staff       3  4 Sep 11:52 .CFUserTextEncoding
+drwx------    3 anita  staff      96 29 Sep 12:49 .config
+drwxr-xr-x@  13 anita  staff     416 29 Sep 14:13 .docker
+-rw-r--r--@   1 anita  staff   16388  6 Nov 11:17 .DS_Store
+-rw-r--r--    1 anita  staff     151  3 Nov 16:27 .gitconfig
+-rw-------    1 anita  staff      20  7 Nov 11:45 .lesshst
+-rw-------    1 anita  staff     166 22 Oct 15:47 .mysql_history
+-rw-------    1 anita  staff      54  7 Nov 11:27 .node_repl_history
+drwxr-xr-x    4 anita  staff     128 29 Sep 11:59 .npm
+drwxr-xr-x   32 anita  staff    1024 29 Sep 12:04 .nvm
+-rw-r--r--    1 anita  staff      44  4 Nov 10:42 .python_history
+drwxr-xr-x@  46 anita  staff    1472  5 Nov 15:22 .ScreamingFrogSEOSpider
+drwx------+ 771 anita  staff   24672  5 Nov 15:18 .Trash
+-rw-------    1 anita  staff   10144  7 Nov 11:59 .viminfo
+drwxr-xr-x@   5 anita  staff     160 10 Sep 14:08 .vscode
+drwx------    4 anita  staff     128 31 Oct 12:07 .zcompcache
+-rw-r--r--    1 anita  staff   49139  3 Nov 14:37 .zcompdump
+-rw-------    1 anita  staff  134499  5 Nov 14:04 .zsh_history
+drwx------   75 anita  staff    2400  7 Nov 11:42 .zsh_sessions
+-rw-r--r--    1 anita  staff     145 29 Sep 12:43 .zshrc
+drwxrwxrwt    4 anita  staff     128  4 Sep 18:01 composer
+drwx------+   4 anita  staff     128  4 Sep 20:15 Desktop
+drwx------+   6 anita  staff     192  4 Sep 22:27 Documents
+drwx------+ 175 anita  staff    5600  6 Nov 13:00 Downloads
+drwxr-xr-x    3 anita  staff      96  6 Nov 09:10 extract_tar
+drwxr-xr-x    6 anita  staff     192  3 Nov 16:51 git_demo
+drwx------@  85 anita  staff    2720  8 Oct 10:47 Library
+drwxr-xr-x    9 anita  staff     288  6 Nov 11:48 linux_training
+drwx------    5 anita  staff     160  8 Sep 11:29 Movies
+drwx------+   4 anita  staff     128 17 Oct 09:01 Music
+drwxr-xr-x    8 anita  staff     256  4 Sep 21:48 mydocs
+-rw-r--r--    1 anita  staff    5120  6 Nov 09:06 new.tar
+drwx------+  33 anita  staff    1056  6 Nov 15:13 Pictures
+drwxr-xr-x@   4 anita  staff     128 15 Sep 14:43 Postman
+drwxr-xr-x+   5 anita  staff     160  4 Sep 19:51 Public
+drwxrwxrwt   21 anita  staff     672 31 Oct 11:57 quintype
+drwx------    3 anita  staff      96 29 Sep 14:31 Sites
+-rw-r--r--    1 anita  staff       0 31 Oct 11:30 test2
+anita@quintypes-MacBook-Pro ~ % cd git_demo 
+anita@quintypes-MacBook-Pro git_demo % ls -la
+total 16
+drwxr-xr-x   6 anita  staff   192  3 Nov 16:51 .
+drwxr-x---+ 42 anita  staff  1344  7 Nov 11:59 ..
+drwxr-xr-x  12 anita  staff   384  7 Nov 11:48 .git
+-rw-r--r--@  1 anita  staff  4887  3 Nov 16:51 git_session.txt
+-rw-r--r--@  1 anita  staff     0  3 Nov 16:06 test.txt
+-rw-r--r--   1 anita  staff     0  3 Nov 16:28 test1.txt
+anita@quintypes-MacBook-Pro git_demo % cat .git
+cat: .git: Is a directory
+anita@quintypes-MacBook-Pro git_demo % git config edit --local
+anita@quintypes-MacBook-Pro git_demo % git config edit --local
+anita@quintypes-MacBook-Pro git_demo % git config edit --local
+anita@quintypes-MacBook-Pro git_demo % cat test.txt 
+anita@quintypes-MacBook-Pro git_demo % cat test1.txt 
+anita@quintypes-MacBook-Pro git_demo % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_session.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+anita@quintypes-MacBook-Pro git_demo % vi test.txt 
+anita@quintypes-MacBook-Pro git_demo % git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_session.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+anita@quintypes-MacBook-Pro git_demo % git add .
+anita@quintypes-MacBook-Pro git_demo % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   git_session.txt
+	modified:   test.txt
+
+anita@quintypes-MacBook-Pro git_demo % git commit -m "I am commiting now"
+[master 9956ff1] I am commiting now
+ 2 files changed, 150 insertions(+)
+ create mode 100644 git_session.txt
+anita@quintypes-MacBook-Pro git_demo % git status                        
+On branch master
+nothing to commit, working tree clean
+anita@quintypes-MacBook-Pro git_demo % ls -la
+total 24
+drwxr-xr-x   6 anita  staff   192  7 Nov 12:12 .
+drwxr-x---+ 42 anita  staff  1344  7 Nov 12:12 ..
+drwxr-xr-x  12 anita  staff   384  7 Nov 12:14 .git
+-rw-r--r--@  1 anita  staff  4887  3 Nov 16:51 git_session.txt
+-rw-r--r--@  1 anita  staff    28  7 Nov 12:12 test.txt
+-rw-r--r--   1 anita  staff     0  3 Nov 16:28 test1.txt
+anita@quintypes-MacBook-Pro git_demo % cd ..
+anita@quintypes-MacBook-Pro ~ % ls -la
+total 488
+drwxr-x---+  42 anita  staff    1344  7 Nov 12:12 .
+drwxr-xr-x    6 root   admin     192  4 Sep 20:12 ..
+drwxr-xr-x@  17 anita  staff     544  8 Sep 15:07 .anydesk
+drwxr-xr-x    4 anita  staff     128  6 Sep 12:50 .aws
+-rw-------    1 anita  staff       3  4 Sep 11:52 .CFUserTextEncoding
+drwx------    3 anita  staff      96 29 Sep 12:49 .config
+drwxr-xr-x@  13 anita  staff     416 29 Sep 14:13 .docker
+-rw-r--r--@   1 anita  staff   16388  6 Nov 11:17 .DS_Store
+-rw-r--r--    1 anita  staff     151  3 Nov 16:27 .gitconfig
+-rw-------    1 anita  staff      20  7 Nov 11:45 .lesshst
+-rw-------    1 anita  staff     166 22 Oct 15:47 .mysql_history
+-rw-------    1 anita  staff      54  7 Nov 11:27 .node_repl_history
+drwxr-xr-x    4 anita  staff     128 29 Sep 11:59 .npm
+drwxr-xr-x   32 anita  staff    1024 29 Sep 12:04 .nvm
+-rw-r--r--    1 anita  staff      44  4 Nov 10:42 .python_history
+drwxr-xr-x@  46 anita  staff    1472  5 Nov 15:22 .ScreamingFrogSEOSpider
+drwx------+ 771 anita  staff   24672  5 Nov 15:18 .Trash
+-rw-------    1 anita  staff    9350  7 Nov 12:12 .viminfo
+drwxr-xr-x@   5 anita  staff     160 10 Sep 14:08 .vscode
+drwx------    4 anita  staff     128 31 Oct 12:07 .zcompcache
+-rw-r--r--    1 anita  staff   49139  3 Nov 14:37 .zcompdump
+-rw-------    1 anita  staff  134499  5 Nov 14:04 .zsh_history
+drwx------   75 anita  staff    2400  7 Nov 11:42 .zsh_sessions
+-rw-r--r--    1 anita  staff     145 29 Sep 12:43 .zshrc
+drwxrwxrwt    4 anita  staff     128  4 Sep 18:01 composer
+drwx------+   4 anita  staff     128  4 Sep 20:15 Desktop
+drwx------+   6 anita  staff     192  4 Sep 22:27 Documents
+drwx------+ 175 anita  staff    5600  6 Nov 13:00 Downloads
+drwxr-xr-x    3 anita  staff      96  6 Nov 09:10 extract_tar
+drwxr-xr-x    6 anita  staff     192  7 Nov 12:12 git_demo
+drwx------@  85 anita  staff    2720  8 Oct 10:47 Library
+drwxr-xr-x    9 anita  staff     288  6 Nov 11:48 linux_training
+drwx------    5 anita  staff     160  8 Sep 11:29 Movies
+drwx------+   4 anita  staff     128 17 Oct 09:01 Music
+drwxr-xr-x    8 anita  staff     256  4 Sep 21:48 mydocs
+-rw-r--r--    1 anita  staff    5120  6 Nov 09:06 new.tar
+drwx------+  33 anita  staff    1056  6 Nov 15:13 Pictures
+drwxr-xr-x@   4 anita  staff     128 15 Sep 14:43 Postman
+drwxr-xr-x+   5 anita  staff     160  4 Sep 19:51 Public
+drwxrwxrwt   21 anita  staff     672 31 Oct 11:57 quintype
+drwx------    3 anita  staff      96 29 Sep 14:31 Sites
+-rw-r--r--    1 anita  staff       0 31 Oct 11:30 test2
+anita@quintypes-MacBook-Pro ~ % cd git_demo 
+anita@quintypes-MacBook-Pro git_demo % cd .git 
+anita@quintypes-MacBook-Pro .git % ls -la
+total 40
+drwxr-xr-x  12 anita  staff  384  7 Nov 12:14 .
+drwxr-xr-x   6 anita  staff  192  7 Nov 12:12 ..
+-rw-r--r--   1 anita  staff   19  7 Nov 12:14 COMMIT_EDITMSG
+-rw-r--r--   1 anita  staff  150  7 Nov 12:03 config
+-rw-r--r--   1 anita  staff   73  3 Nov 16:03 description
+-rw-r--r--   1 anita  staff   23  3 Nov 16:03 HEAD
+drwxr-xr-x  16 anita  staff  512  3 Nov 16:03 hooks
+-rw-r--r--   1 anita  staff  289  7 Nov 12:14 index
+drwxr-xr-x   3 anita  staff   96  3 Nov 16:03 info
+drwxr-xr-x   4 anita  staff  128  3 Nov 16:10 logs
+drwxr-xr-x  13 anita  staff  416  7 Nov 12:14 objects
+drwxr-xr-x   4 anita  staff  128  3 Nov 16:03 refs
+anita@quintypes-MacBook-Pro .git % cd info 
+anita@quintypes-MacBook-Pro info % ls -la
+total 8
+drwxr-xr-x   3 anita  staff   96  3 Nov 16:03 .
+drwxr-xr-x  12 anita  staff  384  7 Nov 12:14 ..
+-rw-r--r--   1 anita  staff  240  3 Nov 16:03 exclude
+anita@quintypes-MacBook-Pro info % ls -la
+total 8
+drwxr-xr-x   3 anita  staff   96  3 Nov 16:03 .
+drwxr-xr-x  12 anita  staff  384  7 Nov 12:14 ..
+-rw-r--r--   1 anita  staff  240  3 Nov 16:03 exclude
+
+anita@quintypes-MacBook-Pro info % cat exclude 
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+# *~
+anita@quintypes-MacBook-Pro info % cd ..
+anita@quintypes-MacBook-Pro .git % cd ...
+cd: no such file or directory: ...
+anita@quintypes-MacBook-Pro .git % cd ..
+anita@quintypes-MacBook-Pro git_demo % touch .gitignore
+anita@quintypes-MacBook-Pro git_demo % vi .gitignore
+anita@quintypes-MacBook-Pro git_demo % vi .gitignore
+anita@quintypes-MacBook-Pro git_demo % vi .gitignore
+anita@quintypes-MacBook-Pro git_demo % touch credentials.pass
+anita@quintypes-MacBook-Pro git_demo % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	credentials.pass
+
+nothing added to commit but untracked files present (use "git add" to track)
+anita@quintypes-MacBook-Pro git_demo % vi credentials.pass 
+anita@quintypes-MacBook-Pro git_demo % git status         
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	credentials.pass
+
+nothing added to commit but untracked files present (use "git add" to track)
+anita@quintypes-MacBook-Pro git_demo % vi .gitignore         
+anita@quintypes-MacBook-Pro git_demo % git status   
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	credentials.pass
+
+nothing added to commit but untracked files present (use "git add" to track)
+anita@quintypes-MacBook-Pro git_demo % mkdir test-app
+anita@quintypes-MacBook-Pro git_demo % cd test-app 
+anita@quintypes-MacBook-Pro test-app % npx create-next-app@latest
+npx: installed 1 in 1.868s
+Unexpected token ?
+anita@quintypes-MacBook-Pro test-app % npx create-next-app@latest
+npx: installed 1 in 1.103s
+Unexpected token ?
+anita@quintypes-MacBook-Pro test-app % npm create vite@latest
+npx: installed 1 in 1.272s
+/Users/anita/.npm/_npx/4496/lib/node_modules/create-vite/index.js:3
+import './dist/index.js'
+       ^^^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected string
+    at Module._compile (internal/modules/cjs/loader.js:703:23)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:770:10)
+    at Module.load (internal/modules/cjs/loader.js:628:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:555:12)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:826:10)
+    at internal/main/run_main_module.js:17:11
+anita@quintypes-MacBook-Pro test-app % npx create-next-app@latest
+npx: installed 1 in 1.23s
+Unexpected token ?
+anita@quintypes-MacBook-Pro test-app % node use 25.1.0
+internal/modules/cjs/loader.js:613
+    throw err;
+    ^
+
+Error: Cannot find module '/Users/anita/git_demo/test-app/use'
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:610:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:526:27)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:826:10)
+    at internal/main/run_main_module.js:17:11
+anita@quintypes-MacBook-Pro test-app % nvm use 25.1.0
+Now using node v25.1.0 (npm v11.6.2)
+anita@quintypes-MacBook-Pro test-app % npx create-next-app@latest
+Need to install the following packages:
+create-next-app@16.0.1
+Ok to proceed? (y) y
+
+✔ What is your project named? … my-app
+✔ Would you like to use the recommended Next.js defaults? › Yes, use recommended defaults
+Creating a new Next.js app in /Users/anita/git_demo/test-app/my-app.
+
+Using npm.
+
+Initializing project with template: app-tw 
+
+
+Installing dependencies:
+- react
+- react-dom
+- next
+
+Installing devDependencies:
+- typescript
+- @types/node
+- @types/react
+- @types/react-dom
+- @tailwindcss/postcss
+- tailwindcss
+- eslint
+- eslint-config-next
+
+
+added 360 packages, and audited 361 packages in 1m
+
+142 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Generating route types...
+✓ Route types generated successfully
+
+Success! Created my-app at /Users/anita/git_demo/test-app/my-app
+
+anita@quintypes-MacBook-Pro test-app % ls -la
+total 0
+drwxr-xr-x   3 anita  staff   96  7 Nov 12:34 .
+drwxr-xr-x   9 anita  staff  288  7 Nov 12:27 ..
+drwxr-xr-x  15 anita  staff  480  7 Nov 12:35 my-app
+anita@quintypes-MacBook-Pro test-app % cd my-app 
+anita@quintypes-MacBook-Pro my-app % ls -la   
+total 512
+drwxr-xr-x   15 anita  staff     480  7 Nov 12:35 .
+drwxr-xr-x    3 anita  staff      96  7 Nov 12:34 ..
+-rw-r--r--    1 anita  staff     480  7 Nov 12:34 .gitignore
+drwxr-xr-x    3 anita  staff      96  7 Nov 12:35 .next
+drwxr-xr-x    6 anita  staff     192  7 Nov 12:34 app
+-rw-r--r--    1 anita  staff     465  7 Nov 12:34 eslint.config.mjs
+-rw-r--r--    1 anita  staff     247  7 Nov 12:34 next-env.d.ts
+-rw-r--r--    1 anita  staff     133  7 Nov 12:34 next.config.ts
+drwxr-xr-x  292 anita  staff    9344  7 Nov 12:35 node_modules
+-rw-r--r--    1 anita  staff  228484  7 Nov 12:35 package-lock.json
+-rw-r--r--    1 anita  staff     528  7 Nov 12:34 package.json
+-rw-r--r--    1 anita  staff      94  7 Nov 12:34 postcss.config.mjs
+drwxr-xr-x    7 anita  staff     224  7 Nov 12:34 public
+-rw-r--r--    1 anita  staff    1450  7 Nov 12:34 README.md
+-rw-r--r--    1 anita  staff     666  7 Nov 12:34 tsconfig.json
+anita@quintypes-MacBook-Pro my-app % git -log
+unknown option: -log
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+anita@quintypes-MacBook-Pro my-app % git log 
+commit 9956ff1a8f8e8d3fa5057b02bf56d4209d7e640d (HEAD -> master)
+Author: anitha <anitha.kode@quintype.com>
+Date:   Fri Nov 7 12:14:23 2025 +0530
+
+    I am commiting now
+
+commit f113427707b8e7a686172c15157004a7c242400f
+Author: anitha <anitha.kode@quintype.com>
+Date:   Mon Nov 3 16:30:25 2025 +0530
+
+    second file comit
+
+commit 35d9b28843611dfcdd72575d95c16db090039fdd
+Author: anitha <anita@quintypes-MacBook-Pro.local>
+Date:   Mon Nov 3 16:10:06 2025 +0530
+
+    Add new file
+anita@quintypes-MacBook-Pro my-app % git-log 
+zsh: command not found: git-log
+anita@quintypes-MacBook-Pro my-app % cd ..
+anita@quintypes-MacBook-Pro test-app % cd ..
+anita@quintypes-MacBook-Pro git_demo % git-log
+zsh: command not found: git-log
+anita@quintypes-MacBook-Pro git_demo % man git
+anita@quintypes-MacBook-Pro git_demo % 
+anita@quintypes-MacBook-Pro git_demo % git log --oneline
+9956ff1 (HEAD -> master) I am commiting now
+f113427 second file comit
+35d9b28 Add new file
+anita@quintypes-MacBook-Pro git_demo % git log --graph 
+* commit 9956ff1a8f8e8d3fa5057b02bf56d4209d7e640d (HEAD -> master)
+| Author: anitha <anitha.kode@quintype.com>
+| Date:   Fri Nov 7 12:14:23 2025 +0530
+| 
+|     I am commiting now
+| 
+* commit f113427707b8e7a686172c15157004a7c242400f
+| Author: anitha <anitha.kode@quintype.com>
+| Date:   Mon Nov 3 16:30:25 2025 +0530
+| 
+|     second file comit
+| 
+* commit 35d9b28843611dfcdd72575d95c16db090039fdd
+  Author: anitha <anita@quintypes-MacBook-Pro.local>
+  Date:   Mon Nov 3 16:10:06 2025 +0530
+  
+      Add new file
+anita@quintypes-MacBook-Pro git_demo % git log --stat
+commit 9956ff1a8f8e8d3fa5057b02bf56d4209d7e640d (HEAD -> master)
+Author: anitha <anitha.kode@quintype.com>
+Date:   Fri Nov 7 12:14:23 2025 +0530
+
+    I am commiting now
+
+ git_session.txt | 147 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ test.txt        |   3 +++
+ 2 files changed, 150 insertions(+)
+
+commit f113427707b8e7a686172c15157004a7c242400f
+Author: anitha <anitha.kode@quintype.com>
+Date:   Mon Nov 3 16:30:25 2025 +0530
+
+    second file comit
+
+ test1.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 35d9b28843611dfcdd72575d95c16db090039fdd
+Author: anitha <anita@quintypes-MacBook-Pro.local>
+Date:   Mon Nov 3 16:10:06 2025 +0530
+
+    Add new file
+
+ test.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+anita@quintypes-MacBook-Pro git_demo % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	credentials.pass
+	test-app/
+
+nothing added to commit but untracked files present (use "git add" to track)
+anita@quintypes-MacBook-Pro git_demo % ls -la
+total 40
+drwxr-xr-x   9 anita  staff   288  7 Nov 12:27 .
+drwxr-x---+ 42 anita  staff  1344  7 Nov 12:46 ..
+drwxr-xr-x  12 anita  staff   384  7 Nov 12:46 .git
+-rw-r--r--   1 anita  staff     6  7 Nov 12:24 .gitignore
+-rw-r--r--   1 anita  staff     9  7 Nov 12:24 credentials.pass
+-rw-r--r--@  1 anita  staff  4887  3 Nov 16:51 git_session.txt
+drwxr-xr-x   3 anita  staff    96  7 Nov 12:34 test-app
+-rw-r--r--@  1 anita  staff    28  7 Nov 12:12 test.txt
+-rw-r--r--   1 anita  staff     0  3 Nov 16:28 test1.txt
+anita@quintypes-MacBook-Pro git_demo % cat .gitignore 
+.pass
+anita@quintypes-MacBook-Pro git_demo % vi .gitignore 
+anita@quintypes-MacBook-Pro git_demo % git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	test-app/
+
+nothing added to commit but untracked files present (use "git add" to track)
+anita@quintypes-MacBook-Pro git_demo % 
