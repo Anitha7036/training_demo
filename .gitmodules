@@ -1,0 +1,6 @@
+[submodule "Training"]
+	path = Training
+	url = https://github.com/Rihan227/Training.git
+[submodule "BusReservation--Backend"]
+	path = BusReservation--Backend
+	url = git@github.com:Anitha7036/BusReservation--Backend.git
